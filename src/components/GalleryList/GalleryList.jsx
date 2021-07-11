@@ -9,7 +9,12 @@ function GalleryList(props){
         <>
             <div>
             {props.list.map(item => 
-                <GalleryItem key={item.id} item={item} likeClicked={props.likeClicked} />
+                <GalleryItem 
+                key={item.id} 
+                item={item} 
+                likeClicked={props.likeClicked} 
+                isClicked={false}
+                />
                 )}
             </div>
         </>
