@@ -6,7 +6,7 @@ function GalleryItem(props){
 
     return (
         <div>
-            <img src={props.item.path} height='auto' width='auto' />
+            <img src={props.item.path} height='100' width='auto' />
             <button onClick={() => props.likeClicked(props.item.id)}>Like</button>
             <div>Likes: {props.item.likes}</div>
         </div>
