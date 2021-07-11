@@ -12,7 +12,7 @@ function GalleryItem(props){
     }
 
     return (
-        <div className="float-child">
+        <div className="item">
             <section onClick={() => toggleClick(props.item.id)}>
                 { clicker &&
                 <img src={props.item.path} height='250' width='auto' />}

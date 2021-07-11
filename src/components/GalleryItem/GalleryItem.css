@@ -1,5 +1,12 @@
-.float-child {
+.item {
     width: 300px;
-    float: left;
+    margin: auto;
     padding: 10px;
+    flex-shrink: none; 
+    /* Trying to prevent the like button and like count from moving when you click the image but cannot figure it out */
 }  
+
+button {
+    margin: 5px;
+}
+
