@@ -1,6 +1,6 @@
 import react from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem';
-import './GalleryList/GalleryList.css';
+import '../GalleryList/GalleryList.css';
 
 function GalleryList(props){
     console.log(props);

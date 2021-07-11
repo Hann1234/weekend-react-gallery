@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-import React from 'react';
 import './App.css';
 // Add components below:
+import GalleryList from '../GalleryList/GalleryList.jsx'
 
 function App() {
 
@@ -36,6 +36,10 @@ function App() {
             console.log('Error purchasing (put) item', err);
         });
     }
+
+    useEffect( ()=>{
+      getItems();
+  }, []);
 
     return (
       <div className="App">
