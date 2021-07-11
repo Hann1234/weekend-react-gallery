@@ -27,7 +27,10 @@ function GalleryItem(props){
 
 
 
-// Ternary solution, however it was reloading the button and like counter as well when toggling between pic and description, there is a better way... 
+// Ternary solution, however it was reloading the button and like counter as well when toggling between pic and description, there is a better way...
+
+    //     const [isClicked, setIsClicked] = useState(false);
+
     //     return ( (!isClicked) ? (
     //         <div className="float-child">
     //             <img onClick={() => setIsClicked(true)} src={props.item.path} height='250' width='auto' />
