@@ -1,18 +1,18 @@
 BASEMODE GOALS:
 
-    [] Look through provided code.
+    [x] Look through provided code.
         - Server side code to retrieve data (GET) and like a photo (PUT) have been provided.
-        [] Test these routes in Postman.
+        [x] Test these routes in Postman.
         - No need to modify for BASEMODE.
-    [] Setup
+    [x] Setup
         - no database for BASEMODE. All data is stored in an array on the server.
         [x] add a few images to the public/images folder
-        [] modify the server/modules/data.js to include an id, title, description and path for each image.
+        [x] modify the server/modules/data.js to include an id, title, description and path for each image.
             - each id should be a unique number (1, 2, 3...)
         [x] install nodemon - already completed
-        [] npm install
-        [] npm run server
-        [] npm run client
+        [x] npm install
+        [x] npm run server
+        [x] npm run client
     [] BASEMODE
         [] Create a gallery page to share pictures of things that are important to me.
             [x] decide what to share
@@ -24,10 +24,10 @@ BASEMODE GOALS:
             [] GalleryList - represents the gallery of images. By componentizing, we could reuse this component in different applications
             [] GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
 BASEMODE Task List:
-    [] Use axios to retrieve (GET) data from to /gallery and store it in App.jsx
-    [] Create a new component for the GalleryList and pass in the gallery data stored in App via props.
-        [] Iterate (loop over) the list of gallery data.
-        [] Make GalleryItems
+    [x] Use axios to retrieve (GET) data from to /gallery and store it in App.jsx
+    [x] Create a new component for the GalleryList and pass in the gallery data stored in App via props.
+        [x] Iterate (loop over) the list of gallery data.
+        [x] Make GalleryItems
     [] Create a new component called GalleryItems.jsx and pass in the individual gallery item via props.
         [] Update the GallerList to use this component to display an image.
         [] Swap the image with the description on click.

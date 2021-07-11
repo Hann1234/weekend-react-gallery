@@ -1,6 +1,6 @@
 import react from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem';
-import './GalleryList.css';
+import './GalleryList/GalleryList.css';
 
 function GalleryList(props){
     console.log(props);
@@ -9,7 +9,7 @@ function GalleryList(props){
         <>
             <div>
             {props.list.map(item => 
-                <GalleryItem key={item.id} item={item} />
+                <GalleryItem key={item.id} item={item} likeClicked={props.likeClicked} />
                 )}
             </div>
         </>

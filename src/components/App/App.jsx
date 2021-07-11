@@ -23,12 +23,28 @@ function App() {
         });
     }
 
+    // PUT to increase likes when like button is clicked
+    const likeClicked = (itemId) => {
+        axios({
+            method:'PUT',
+            url:`/gallery/like/${itemId}`
+        })
+        .then( response => {
+            getList();
+        })
+        .catch( err => {
+            console.log('Error purchasing (put) item', err);
+        });
+    }
+
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <GalleryList list={galleryItems} />
+        <GalleryList 
+        list={galleryItems}
+        likeClicked={likeClicked} />
         <img src="images/goat_small.jpg"/>
       </div>
     );
