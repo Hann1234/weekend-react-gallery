@@ -13,7 +13,6 @@ function GalleryList(props){
                 key={item.id} 
                 item={item} 
                 likeClicked={props.likeClicked} 
-                isClicked={false}
                 />
                 )}
             </div>
