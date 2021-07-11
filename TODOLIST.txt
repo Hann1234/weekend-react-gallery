@@ -14,24 +14,24 @@ BASEMODE GOALS:
         [x] npm run server
         [x] npm run client
     [] BASEMODE
-        [] Create a gallery page to share pictures of things that are important to me.
+        [x] Create a gallery page to share pictures of things that are important to me.
             [x] decide what to share
-        [] Clicking image will toggle to a description.
-        [] Can click a button to 'like' the image.
-            [] 'likes' will be counted and number of likes displayed.
-        [] Use props to pass values
-            [] App - represents the overall application or site
-            [] GalleryList - represents the gallery of images. By componentizing, we could reuse this component in different applications
-            [] GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
+        [x] Clicking image will toggle to a description.
+        [x] Can click a button to 'like' the image.
+            [x] 'likes' will be counted and number of likes displayed.
+        [x] Use props to pass values
+            [x] App - represents the overall application or site
+            [x] GalleryList - represents the gallery of images. By componentizing, we could reuse this component in different applications
+            [x] GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
 BASEMODE Task List:
     [x] Use axios to retrieve (GET) data from to /gallery and store it in App.jsx
     [x] Create a new component for the GalleryList and pass in the gallery data stored in App via props.
         [x] Iterate (loop over) the list of gallery data.
         [x] Make GalleryItems
-    [] Create a new component called GalleryItems.jsx and pass in the individual gallery item via props.
+    [x] Create a new component called GalleryItems.jsx and pass in the individual gallery item via props.
         [x] Update the GallerList to use this component to display an image.
-        [] Swap the image with the description on click.
-            [] Use conditional rendering.
+        [x] Swap the image with the description on click.
+            [x] Use conditional rendering.
         [x] Display the number of likes for each item and include a like button.
         [x] When the like button is clicked, use axios to update (PUT) the like count /gallery/like/:id
         [x] Update the gallery each time a like button is clicked.
