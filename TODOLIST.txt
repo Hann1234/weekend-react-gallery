@@ -6,7 +6,7 @@ BASEMODE GOALS:
         - No need to modify for BASEMODE.
     [] Setup
         - no database for BASEMODE. All data is stored in an array on the server.
-        [] add a few images to the public/images folder
+        [x] add a few images to the public/images folder
         [] modify the server/modules/data.js to include an id, title, description and path for each image.
             - each id should be a unique number (1, 2, 3...)
         [x] install nodemon - already completed
@@ -15,7 +15,7 @@ BASEMODE GOALS:
         [] npm run client
     [] BASEMODE
         [] Create a gallery page to share pictures of things that are important to me.
-            [x] decide what to share - I will make mine music/concert themed, music is a big part of my life.
+            [x] decide what to share
         [] Clicking image will toggle to a description.
         [] Can click a button to 'like' the image.
             [] 'likes' will be counted and number of likes displayed.
