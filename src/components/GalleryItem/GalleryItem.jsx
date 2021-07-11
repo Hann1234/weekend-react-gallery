@@ -5,8 +5,9 @@ function GalleryItem(props){
     console.log(props);
 
     return (
-        <div>
+        <div className="float-child">
             <img src={props.item.path} height='100' width='auto' />
+            <br></br>
             <button onClick={() => props.likeClicked(props.item.id)}>Like</button>
             <div>Likes: {props.item.likes}</div>
         </div>

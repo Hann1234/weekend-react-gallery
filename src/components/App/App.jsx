@@ -30,7 +30,7 @@ function App() {
             url:`/gallery/like/${itemId}`
         })
         .then( response => {
-            getList();
+            getItems();
         })
         .catch( err => {
             console.log('Error purchasing (put) item', err);
@@ -49,7 +49,6 @@ function App() {
         <GalleryList 
         list={galleryItems}
         likeClicked={likeClicked} />
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }

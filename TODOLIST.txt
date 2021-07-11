@@ -29,12 +29,12 @@ BASEMODE Task List:
         [x] Iterate (loop over) the list of gallery data.
         [x] Make GalleryItems
     [] Create a new component called GalleryItems.jsx and pass in the individual gallery item via props.
-        [] Update the GallerList to use this component to display an image.
+        [x] Update the GallerList to use this component to display an image.
         [] Swap the image with the description on click.
             [] Use conditional rendering.
-        [] Display the number of likes for each item and include a like button.
-        [] When the like button is clicked, use axios to update (PUT) the like count /gallery/like/:id
-        [] Update the gallery each time a like button is clicked.
+        [x] Display the number of likes for each item and include a like button.
+        [x] When the like button is clicked, use axios to update (PUT) the like count /gallery/like/:id
+        [x] Update the gallery each time a like button is clicked.
 
 STRETCH GOALS:
     [] Use Git Branching
