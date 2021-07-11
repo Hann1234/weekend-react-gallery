@@ -1,4 +1,4 @@
-# Project Name
+# React Picture Gallery
 
 For this project I created a gallery page to share pictures that are important to me.  The page is interactive allowing a viewer to click an image to see a description of the picture, and use a "like" button to like an image. The number of likes clicks updates in real time and is displayed as well.
 
