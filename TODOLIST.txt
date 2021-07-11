@@ -1,4 +1,5 @@
 BASEMODE GOALS:
+
     [] Look through provided code.
         - Server side code to retrieve data (GET) and like a photo (PUT) have been provided.
         [] Test these routes in Postman.
@@ -14,6 +15,38 @@ BASEMODE GOALS:
         [] npm run client
     [] BASEMODE
         [] Create a gallery page to share pictures of things that are important to me.
-            [] decide what to share - I will make mine music/consert themed, music is a big part of my life.
+            [x] decide what to share - I will make mine music/concert themed, music is a big part of my life.
+        [] Clicking image will toggle to a description.
+        [] Can click a button to 'like' the image.
+            [] 'likes' will be counted and number of likes displayed.
+        [] Use props to pass values
+            [] App - represents the overall application or site
+            [] GalleryList - represents the gallery of images. By componentizing, we could reuse this component in different applications
+            [] GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
+BASEMODE Task List:
+    [] Use axios to retrieve (GET) data from to /gallery and store it in App.jsx
+    [] Create a new component for the GalleryList and pass in the gallery data stored in App via props.
+        [] Iterate (loop over) the list of gallery data.
+        [] Make GalleryItems
+    [] Create a new component called GalleryItems.jsx and pass in the individual gallery item via props.
+        [] Update the GallerList to use this component to display an image.
+        [] Swap the image with the description on click.
+            [] Use conditional rendering.
+        [] Display the number of likes for each item and include a like button.
+        [] When the like button is clicked, use axios to update (PUT) the like count /gallery/like/:id
+        [] Update the gallery each time a like button is clicked.
+
+STRETCH GOALS:
+    [] Use Git Branching
+    [] Move the data into a database (postgresql)
+        [] name your database react_gallery
+        [] include a database.sql file documenting your database tables
+    [] Add a form (new component) that allows a user to POST a new gallery item
+        [] Client side form (use absolute URL for images)
+        [] Server side route for posting an image
+    [] Ability to delete a gallery item
+    [] Add styling with Material-UI https://material-ui.com/
+    [] Implement uppy for image upload 
+
         
         
